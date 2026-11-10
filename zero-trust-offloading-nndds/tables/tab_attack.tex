@@ -1,0 +1,36 @@
+\begin{table*}[!t]
+\centering
+\caption{End-to-end trust evaluation at $\bar\gamma=20$\,dB with $\pi_P=\pi_R=\pi_S=0.1$ (1500 rounds per configuration). E: mean device energy per task; DVP: deadline violation probability; ASR: attack success rate; $P_{\rm int}$: interception probability; FB: fallback rate; $\hat P_{\rm D}^J/\hat P_{\rm FA}^J$: empirical jamming-detection/false-alarm rates.}
+\label{tab:attack}
+\setlength{\tabcolsep}{2.6pt}
+\footnotesize
+\resizebox{\textwidth}{!}{\begin{tabular}{ll rrrrrr r}
+\toprule
+Config. & Scheme & E [mJ] & DVP [\%] & ASR [\%] & $P_{\rm int}$ [\%] & FB [\%] & $b_2/b_{\rm task}$ & $\hat P_{\rm D}^J/\hat P_{\rm FA}^J$\\
+\midrule
+\multirow{5}{*}{SISO $1\times1$} & Local only & 480.0 & 0.0 & 0.00 & 0.0 & 0.0 & 0.00 & --\\
+ & Security-agnostic & 155.0 & 18.5 & 9.40 & 72.1 & 0.0 & 0.77 & --\\
+ & Decoupled shield & 338.6 & 0.0 & 0.13 & 72.1 & 97.5 & 0.77 & 0.89/0.012\\
+ & Proposed ($\kappa=0.5$) & 262.3 & 0.0 & 0.07 & 73.1 & 11.3 & 0.56 & 0.92/0.010\\
+ & Proposed ($\kappa=0.25$) & 220.5 & 0.0 & 0.07 & 73.3 & 11.3 & 0.64 & 0.92/0.010\\
+\midrule
+\multirow{5}{*}{MISO $4\times1$} & Local only & 480.0 & 0.0 & 0.00 & 0.0 & 0.0 & 0.00 & --\\
+ & Security-agnostic & 29.1 & 17.7 & 10.53 & 19.8 & 0.0 & 1.00 & --\\
+ & Decoupled shield & 267.0 & 0.0 & 0.00 & 19.8 & 100.0 & 1.00 & 0.95/0.010\\
+ & Proposed ($\kappa=0.5$) & 163.2 & 0.0 & 0.00 & 9.4 & 11.4 & 0.77 & 0.94/0.009\\
+ & Proposed ($\kappa=0.25$) & 90.9 & 0.0 & 0.00 & 9.4 & 11.4 & 0.91 & 0.94/0.009\\
+\midrule
+\multirow{5}{*}{MIMO $4\times2$} & Local only & 480.0 & 0.0 & 0.00 & 0.0 & 0.0 & 0.00 & --\\
+ & Security-agnostic & 17.3 & 17.5 & 10.47 & 5.9 & 0.0 & 1.00 & --\\
+ & Decoupled shield & 256.1 & 0.0 & 0.00 & 5.9 & 99.9 & 1.00 & 0.99/0.010\\
+ & Proposed ($\kappa=0.5$) & 58.9 & 0.0 & 0.00 & 1.6 & 11.9 & 0.98 & 1.00/0.006\\
+ & Proposed ($\kappa=0.25$) & 36.4 & 0.0 & 0.00 & 1.6 & 11.9 & 1.00 & 1.00/0.006\\
+\midrule
+\multirow{5}{*}{MIMO $4\times4$} & Local only & 480.0 & 0.0 & 0.00 & 0.0 & 0.0 & 0.00 & --\\
+ & Security-agnostic & 12.3 & 16.9 & 10.93 & 0.0 & 0.0 & 1.00 & --\\
+ & Decoupled shield & 96.6 & 0.0 & 0.00 & 0.0 & 35.2 & 1.00 & 1.00/0.008\\
+ & Proposed ($\kappa=0.5$) & 35.9 & 0.0 & 0.00 & 0.0 & 9.7 & 1.00 & 1.00/0.016\\
+ & Proposed ($\kappa=0.25$) & 24.2 & 0.0 & 0.00 & 0.0 & 9.7 & 1.00 & 1.00/0.016\\
+\bottomrule
+\end{tabular}}
+\end{table*}
