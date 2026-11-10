@@ -1,4 +1,6 @@
-# Zero-Trust Offloading with Signal-Level Protection for MIMO 6G Edge Networks
+# NN-DDS: Zero-Trust Offloading with Signal-Level Protection for MIMO 6G Edge Networks
+
+Repository: <https://github.com/mjchen-cs/NN-DDS>
 
 Code and data for the paper
 
@@ -40,10 +42,12 @@ run_all.sh          reproduces everything
 Python ≥ 3.10:
 
 ```bash
+git clone https://github.com/mjchen-cs/NN-DDS.git
+cd NN-DDS
 pip install -r requirements.txt
 ./run_all.sh            # full reproduction (about 1.5-2 h on one CPU core per chain)
 # or individual steps, from the code/ folder:
-cd code && python3 exp_solvers.py && python3 plot.py && python3 tables.py
+(cd code && python3 exp_solvers.py && python3 plot.py && python3 tables.py)
 ```
 
 All random seeds are fixed, so a re-run reproduces the summary results exactly. Only the wall-clock times in Table III depend on the machine. The published data were produced with Python 3.13, NumPy 2.5, SciPy 1.18, CVXPY 1.9 (Clarabel 0.11), scikit-learn 1.9 and Matplotlib 3.11.
@@ -77,4 +81,4 @@ Please cite the paper above if you use this code or data. A BibTeX entry will be
 
 ## License
 
-To be added by the authors.
+Released under the [MIT License](LICENSE). The data in `code/data/` are released under the same terms.
