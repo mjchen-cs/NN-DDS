@@ -6,7 +6,7 @@ Code and data for the paper
 
 > M. Chen, H. Qin, H. Shi, M. Yi, J. Liang, S. Mumtaz, A. Farouk,
 > "Zero-Trust Offloading with Signal-Level Protection for MIMO 6G Edge Networks: A Neural Differential Dynamic Approach,"
-> submitted to *IEEE Journal of Selected Topics in Signal Processing*, Special Issue on Signal Processing for Trustworthiness in 6G Wireless Ecosystems.
+> submitted to *IEEE Journal of Selected Topics in Signal Processing*
 
 The repository contains:
 
